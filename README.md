@@ -1,25 +1,20 @@
 # Prebuilt APKs
 
-This is a collection of FOSS APKs, coupled with the respective Android.mk for an
-easy integration in the Android build system.
-These are just the official unmodified prebuilt binaries, signed by the
-corresponding developers, except for:
- * com.google.android.maps, as the JAR and the XML have been extracted from the ZIP on the [microG's GitHub release page](https://github.com/microg/android_frameworks_mapsv1/releases)
- * additional_repos.xml, as it is just the microG FDroid repository XML file
+This is a collection of FOSS APKs, coupled with their respective Android.mk for easy integration into the Android build system.
 
-To include them in your build just add their name in CUSTOM_PACKAGES (for
-example in vendor/lineage/config/common.mk).
+These are the official unmodified prebuilt binaries, signed by their corresponding developers, except for com.google.android.maps; the JAR and the XML have been extracted from the ZIP on the [microG's GitHub release page](https://github.com/microg/android_frameworks_mapsv1/releases).
+
+To include them in your build, just add their name to `CUSTOM_PACKAGES`.
 
 The included APKs are:
- * FDroid packages (binaries sourced from [here](https://f-droid.org/packages/org.fdroid.fdroid/) and [here](https://f-droid.org/packages/org.fdroid.fdroid.privileged/))
-   * FDroid: a catalogue of FOSS (Free and Open Source Software) applications for the Android platform
-   * FDroid Privileged Extension: a FDroid extension to ease the installation/removal of apps
-   * additional_repos.xmly: a simple package to include the [microG FDroid repository](https://microg.org/fdroid.html) in the ROM (requires FDroid >= 1.5)
+ * F-Droid packages (binaries sourced from [here](https://f-droid.org/packages/org.fdroid.fdroid/) and [here](https://f-droid.org/packages/org.fdroid.fdroid.privileged/))
+   * F-Droid: a catalogue of FOSS (Free and Open Source Software) applications for the Android platform
+   * F-Droid Privileged Extension: a F-Droid extension to ease the installation/removal of apps
  * microG packages (binaries sourced from [here](https://microg.org/download.html) and [here](https://github.com/microg/android_frameworks_mapsv1))
    * GmsCore: the main component of microG, a FOSS reimplementation of the Google Play Services (requires GsfProxy and FakeStore for full functionality)
    * GsfProxy: a GmsCore proxy for legacy GCM compatibility
    * FakeStore: an empty package that mocks the existence of the Google Play Store
-   * com.google.android.maps: legacy microG's mapsv1 reimplementation
- * LineageOS packages (binaries sourced from [here](https://download.lineageos.org/extras))
-   * OpenWeatherMapWeatherProvider: "Open Weather Map" weather provider for the LineageOS' weather service
-
+   * com.google.android.maps: microG's legacy mapsv1 reimplementation
+ * UnifiedNLP backends (binaries sourced from [here](https://f-droid.org/en/packages/org.microg.nlp.backend.ichnaea/) and [here](https://f-droid.org/en/packages/org.microg.nlp.backend.nominatim/))
+   * MozillaNlpBackend: Network-based Geolocation module, powered by [Mozilla Location Services](https://location.services.mozilla.com/)
+   * NominatimNlpBackend: Address lookup module using MapQuest’s Nominatim service
