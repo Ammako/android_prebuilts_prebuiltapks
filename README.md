@@ -18,3 +18,5 @@ The included APKs are:
  * UnifiedNLP backends (binaries sourced from [here](https://f-droid.org/en/packages/org.microg.nlp.backend.ichnaea/) and [here](https://f-droid.org/en/packages/org.microg.nlp.backend.nominatim/))
    * MozillaNlpBackend: Network-based Geolocation module, powered by [Mozilla Location Services](https://location.services.mozilla.com/)
    * NominatimNlpBackend: Address lookup module using MapQuest’s Nominatim service
+ * Bromite packages (binaries sourced from [here](https://www.bromite.org/system_web_view))
+   * Bromite System WebView: Android System WebView with Bromite patches. Replaces the default Android System WebView.
